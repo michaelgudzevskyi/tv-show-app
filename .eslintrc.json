@@ -42,12 +42,26 @@
     }
   },
   "rules": {
-    "react/prop-types": 0,
     "react/display-name": 0,
     "react/jsx-uses-react": "off",
+    "no-use-before-define": "off",
     "react/react-in-jsx-scope": "off",
+    "prettier/prettier": ["off", {
+      "endOfLine": "auto"}],
+    "react/require-default-props": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/prefer-default-export": "off",
+    "react/destructuring-assignment": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
     "import-helpers/order-imports": [
-      "warn",
+      "off",
       {
         "newlinesBetween": "always",
         "groups": [
