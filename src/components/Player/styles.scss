@@ -9,8 +9,8 @@
   }
 
   &__synopsis {
-    color: $color-base;
     border-bottom: 1px solid #dfdfdf21;
+    color: $color-base;
     padding: 5px 0 15px 0;
   }
 
@@ -24,8 +24,8 @@
     right: 0;
 
     &:before {
-      content: '';
       position: absolute;
+      content: '';
       width: 25%;
       height: 2px;
       top: -1px;

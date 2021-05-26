@@ -1,10 +1,10 @@
 @import '../../styles/abstracts/variables';
 /*---------------------------------episodes-------------------------------*/
 .episodes {
-  max-height: 534px;
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: scroll;
+  max-height: 534px;
 
   &__items {
     padding: 0px 0 250px 0;
@@ -16,8 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 8px;
     cursor: pointer;
+    padding: 10px 0 10px 8px;
   }
 
   &__title {

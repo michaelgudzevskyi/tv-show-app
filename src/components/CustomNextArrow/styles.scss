@@ -1,13 +1,13 @@
 .custom-slick-next {
   position: absolute;
-  top: 50%;
   display: block;
+  cursor: pointer;
+  top: 50%;
+  right: -40px;
   width: 32px;
   height: 32px;
   padding: 0;
   transform: translate(0, -50%);
-  cursor: pointer;
-  right: -40px;
 
   @media only screen and (max-width: 769px) {
     display: none;
@@ -15,11 +15,11 @@
 
   &:before,
   &:after {
+    position: absolute;
+    background-color: #fff;
     content: '';
     width: 18px;
     height: 1px;
-    background-color: #fff;
-    position: absolute;
   }
 
   &:before {
