@@ -1,7 +1,7 @@
 import { Player } from 'components';
 import { FC } from 'react';
 import Collapsible from 'react-collapsible';
-import iconPlay from '../../assets/images/play-small-player-w.svg';
+import iconPlay from 'assets/images/play-small-player-w.svg';
 import { EpisodeDTO } from './interfaces';
 import './styles.scss';
 

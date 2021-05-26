@@ -10,8 +10,10 @@ export const Asside: FC = () => {
 
   const filterSeasons = (season: number) =>
     episodes
-      .filter((e: any) => e?.SeasonNumber === season)
-      .map((item: any) => item && <Episode key={item.ID} episodeData={item} />);
+      ?.filter((e: any) => e?.SeasonNumber === season)
+      ?.map(
+        (item: any) => item && <Episode key={item.ID} episodeData={item} />,
+      );
 
   return (
     <div className="asside">

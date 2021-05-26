@@ -3,7 +3,7 @@ import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
 import { Creators as PreviewCreators } from 'store/ducks/preview';
 import { Creators as EpisodesCreators } from 'store/ducks/episodes';
 import { Options, Asside } from 'components';
-import iconClose from '../../assets/images/close-search-w.svg';
+import iconClose from 'assets/images/close-search-w.svg';
 
 export const Details: React.FC = () => {
   const { previewData } = useSelector((state: RootStateOrAny) => state.preview);
