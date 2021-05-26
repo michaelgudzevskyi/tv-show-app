@@ -9,8 +9,7 @@ export const Types = {
 };
 
 const initialState = {
-  countryList: false,
-  error: false,
+  previewData: null,
   loading: false,
 };
 
@@ -22,7 +21,7 @@ export default function reducer(
     case Types.SET_PREVIEW:
       return {
         ...state,
-        countryList: action.payload,
+        previewData: action.payload,
       };
     default:
       return state;

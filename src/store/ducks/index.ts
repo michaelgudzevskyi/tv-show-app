@@ -1,14 +1,14 @@
 import { CombinedState, combineReducers } from 'redux';
 
-import movie from './movie';
+import preview from './preview';
 
 const reducers = combineReducers({
-  movie,
+  preview,
 });
 
 // reset the state of a redux store
 const rootReducer = (
-  state: CombinedState<{ movie: never }> | undefined,
+  state: CombinedState<{ preview: never }> | undefined,
   action: { type: string; payload: string },
 ): any => {
   return reducers(state, action);

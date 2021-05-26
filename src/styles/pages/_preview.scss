@@ -1,0 +1,24 @@
+.preview {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  &__wrapper {
+  }
+
+  &__content {
+    height: calc(100vh - 180px);
+  }
+
+  &__options {
+    height: 180px;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(37, 37, 37, 1) 0%,
+      rgba(33, 33, 33, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+}

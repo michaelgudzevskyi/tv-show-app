@@ -1,20 +1,15 @@
 /** Fonts *************************************/
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 
-$font-base: 'Chivo', sans-serif;
+$font-base: 'Nunito', sans-serif;
 $letter-spacing: normal;
 $line-height: normal;
 $font-weight: 400;
 $font-size: 14px;
 
 /** Colors *************************************/
-$color-auth-bg: #1a1a2e;
 $color-base: #fff;
-$color-base-gray: #707070;
-$color-blue: #464f88;
-$color-dark: #0f0f0f;
-$color-button-disabled: #9597a3;
-$color-yellow: #ff9d00;
-$color-green: #30ba0a;
+$color-dark: #13161a;
+$color-accent: #30ba0a;
 
 /***************************************/
