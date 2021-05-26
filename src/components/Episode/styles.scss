@@ -1,0 +1,31 @@
+@import '../../styles/abstracts/variables';
+/*---------------------------------episodes-------------------------------*/
+.episodes {
+  max-height: 534px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  &__items {
+    padding: 0 0 190px 0;
+  }
+
+  &__item {
+    border-bottom: 1px solid #dfdfdf21;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 8px;
+    cursor: pointer;
+  }
+
+  &__title {
+    color: $color-base;
+    font-size: 16px;
+    margin: 0 10px 0 0;
+  }
+
+  img {
+    width: 25px;
+  }
+}

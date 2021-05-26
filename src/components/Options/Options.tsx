@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Tab, Tabs as TabsComponent, TabList, TabPanel } from 'react-tabs';
+import { RootStateOrAny, useSelector } from 'react-redux';
 import iconShare from '../../assets/images/share-gray-s.svg';
 import iconAdd from '../../assets/images/add-gray-s.svg';
 import iconRec from '../../assets/images/rec-gray-s.svg';
@@ -8,6 +9,9 @@ import iconLogo from '../../assets/images/logo-telecine.svg';
 import './styles.scss';
 
 export const Options: FC = () => {
+  const { previewData } = useSelector((state: RootStateOrAny) => state.preview);
+  console.log('previewData 2: ', previewData);
+
   return (
     <div className="options">
       <TabsComponent>
@@ -42,11 +46,7 @@ export const Options: FC = () => {
 
             <div className="general__info">
               <h4>Sinopse</h4>
-              <p>
-                Contos de personagens clássicos como Drácula, Frankenstein e
-                Dorian Gray estão reunidos nesta série de terror ambientada nas
-                ruas da Londres vitoriana.
-              </p>
+              <p>{previewData?.Synopsis}</p>
             </div>
           </div>
         </TabPanel>

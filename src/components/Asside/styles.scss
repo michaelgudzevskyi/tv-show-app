@@ -1,0 +1,39 @@
+@import '../../styles/abstracts/variables';
+
+.asside {
+  height: 80%;
+
+  .react-tabs {
+    &__tab-list {
+      border-bottom: 1px solid #bebebe2e;
+      margin: 0 0 10px;
+      padding: 0;
+    }
+
+    &__tab {
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      position: relative;
+      list-style: none;
+      cursor: pointer;
+      text-align: center;
+      bottom: -1px;
+      padding: 10px 5px;
+      font-weight: 700;
+      margin: 0 10px 0 0;
+      min-width: 25px;
+      color: $color-base;
+
+      &--selected {
+        border-color: $color-accent;
+      }
+    }
+
+    &__tab-panel {
+      display: none;
+      &--selected {
+        display: block;
+      }
+    }
+  }
+}

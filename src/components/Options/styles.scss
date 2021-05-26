@@ -11,35 +11,35 @@
     right: 0;
     width: 37px;
   }
-}
 
-.react-tabs {
-  &__tab-list {
-    border-bottom: 1px solid #bebebe2e;
-    margin: 0 0 10px;
-    padding: 0;
-  }
-
-  &__tab {
-    display: inline-block;
-    border-bottom: 1px solid transparent;
-    position: relative;
-    list-style: none;
-    cursor: pointer;
-    bottom: -1px;
-    padding: 6px 2px;
-    font-weight: 700;
-    margin: 0 100px 0 0;
-
-    &--selected {
-      border-color: $color-accent;
+  .react-tabs {
+    &__tab-list {
+      border-bottom: 1px solid #bebebe2e;
+      margin: 0 0 10px;
+      padding: 0;
     }
-  }
 
-  &__tab-panel {
-    display: none;
-    &--selected {
-      display: block;
+    &__tab {
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      position: relative;
+      list-style: none;
+      cursor: pointer;
+      bottom: -1px;
+      padding: 6px 2px;
+      font-weight: 700;
+      margin: 0 100px 0 0;
+
+      &--selected {
+        border-color: $color-accent;
+      }
+    }
+
+    &__tab-panel {
+      display: none;
+      &--selected {
+        display: block;
+      }
     }
   }
 }

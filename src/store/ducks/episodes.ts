@@ -5,11 +5,11 @@ export const Types = {
   SET_ERRORS: 'ui/SET_ERRORS',
   CLEAR_ERRORS: 'ui/CLEAR_ERRORS',
   LOADING_UI: 'ui/LOADING_UI',
-  SET_PREVIEW: 'movie/SET_PREVIEW',
+  SET_EPISODES: 'movie/SET_EPISODES',
 };
 
 const initialState = {
-  previewData: null,
+  episodes: null,
   loading: false,
 };
 
@@ -18,10 +18,10 @@ export default function reducer(
   action: { type: string; payload: string },
 ): any {
   switch (action.type) {
-    case Types.SET_PREVIEW:
+    case Types.SET_EPISODES:
       return {
         ...state,
-        previewData: action.payload,
+        episodes: action.payload,
       };
     default:
       return state;
@@ -29,13 +29,13 @@ export default function reducer(
 }
 
 export const Creators = {
-  getMoviePreview: () => (dispatch: Dispatch) => {
+  getAllEpisodes: () => (dispatch: Dispatch) => {
     dispatch({ type: Types.LOADING_UI });
     api
-      .get('/tv-shows/SHOW123.json')
+      .get('/episodes/SHOW123.json')
       .then(resp => {
         dispatch({
-          type: Types.SET_PREVIEW,
+          type: Types.SET_EPISODES,
           payload: resp.data,
         });
         dispatch({ type: Types.CLEAR_ERRORS });
