@@ -27,7 +27,7 @@
   }
 
   &__title {
-    @include font-size(40px, 70px);
+    @include font-size(30px, 60px);
     color: lighten($color-base, 25%);
   }
 
@@ -40,7 +40,7 @@
   }
 
   &__headline {
-    @include font-size(14px, 19px);
+    @include font-size(12px, 16px);
     color: $color-base;
     text-transform: uppercase;
     font-weight: 100;

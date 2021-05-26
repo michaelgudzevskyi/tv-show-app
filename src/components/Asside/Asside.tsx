@@ -7,7 +7,11 @@ import './styles.scss';
 
 export const Asside: FC = () => {
   const { episodes } = useSelector((state: RootStateOrAny) => state.episodes);
-  console.log('episodes: ', episodes);
+
+  const filterSeasons = (season: number) =>
+    episodes
+      .filter((e: any) => e?.SeasonNumber === season)
+      .map((item: any) => item && <Episode key={item.ID} episodeData={item} />);
 
   return (
     <div className="asside">
@@ -19,17 +23,19 @@ export const Asside: FC = () => {
         </TabList>
         <TabPanel>
           <div className="episodes">
-            <div className="episodes__items">
-              {episodes &&
-                episodes.map(
-                  (item: any) =>
-                    item && <Episode key={item.ID} episodeData={item} />,
-                )}
-            </div>
+            <div className="episodes__items">{filterSeasons(1)}</div>
           </div>
         </TabPanel>
-        <TabPanel>Body 2 </TabPanel>
-        <TabPanel>Body 3</TabPanel>
+        <TabPanel>
+          <div className="episodes">
+            <div className="episodes__items">{filterSeasons(2)}</div>
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div className="episodes">
+            <div className="episodes__items">{filterSeasons(3)}</div>
+          </div>
+        </TabPanel>
       </TabsComponent>
     </div>
   );

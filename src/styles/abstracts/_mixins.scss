@@ -7,8 +7,8 @@ $font-bound-max: 720px; // will override defaults
 // ==============================
 
 //  default font scale bounding
-$font-lock-min: 400px !default;
-$font-lock-max: 1000px !default;
+$font-lock-min: 320px !default;
+$font-lock-max: 1300px !default;
 
 //  font-size
 @mixin font-size(
