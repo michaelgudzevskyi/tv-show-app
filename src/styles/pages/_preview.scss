@@ -5,20 +5,41 @@
   background-position: center top;
 
   &__wrapper {
+    box-shadow: inset 0px 9px 319px 47px #000000;
   }
 
   &__content {
+    position: relative;
     height: calc(100vh - 180px);
   }
 
+  &__asside {
+    position: absolute;
+    right: 0;
+    width: 350px;
+    height: 100%;
+  }
+
+  &__title {
+    @include font-size(40px, 70px);
+    color: $color-base;
+  }
+
+  &__headline {
+    @include font-size(14px, 19px);
+    color: $color-base;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 0;
+    letter-spacing: 2px;
+  }
+
   &__options {
+    position: relative;
     height: 180px;
     width: 100%;
-    background: linear-gradient(
-      90deg,
-      rgba(37, 37, 37, 1) 0%,
-      rgba(33, 33, 33, 1) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
+    background: linear-gradient(90deg, #0d0d0d 0%, #090909 0%, black 100%);
+    box-shadow: 0px 20px 108px 227px #000000;
+    z-index: 10;
   }
 }

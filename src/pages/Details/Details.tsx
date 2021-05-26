@@ -15,12 +15,14 @@ export const Details: React.FC = () => {
   return (
     <main
       className="preview"
-      style={{ backgroundImage: `url('${previewData.Images.Background}')` }}
+      style={{
+        backgroundImage: `linear-gradient(to right, transparent, #000000), url('${previewData.Images.Background}')`,
+      }}
     >
       <div className="preview__wrapper">
         <div className="preview__content container">
           <div className="preview__header">
-            <h1 className="preview__title">title</h1>
+            <h1 className="preview__title">Penny Dreadful</h1>
             <span className="preview__headline">
               80% indicado / ciencia ficcion / 2015 / eua / 14
             </span>
