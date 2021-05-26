@@ -36,14 +36,14 @@ src
 ...
 ```
 
-**This is your component structure:**
+**This is the component structure:**
 
 ```
 ...
 components
 |-- YourComponent
     |-- index.tsx
-    |-- styles.ts
+    |-- styles.scss
     |-- YourComponent.spec.ts
 ...
 ```
@@ -67,7 +67,6 @@ All mock data for your unit testes
 `./models`
 
 global interfaces and models that your project needs
-
 
 `./pages`
 
@@ -114,8 +113,8 @@ The project is already configured with:
 - unit testing example
 - Eslint
 - Prettier
-- Styled
-- Styled Theming
+- BEM
+- SCSS
 - Husky
 
 # Getting Started with Create React App
@@ -167,7 +166,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 You can learn more web develop tools [web.dev](https://web.dev/)
 
-
 ### Main dependecies
 
 - [axios](https://www.npmjs.com/package/axios)
@@ -178,7 +176,6 @@ You can learn more web develop tools [web.dev](https://web.dev/)
 - [react-hook-form](https://react-hook-form.com/)
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start)
-- [styled-components](https://styled-components.com/)
 
 ### Main dev dependecies
 
