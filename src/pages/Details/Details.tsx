@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
 import { Creators as PreviewCreators } from 'store/ducks/preview';
+import { Options, Asside } from '../../components';
 
 export const Details: React.FC = () => {
   const { previewData } = useSelector((state: RootStateOrAny) => state.preview);
@@ -28,11 +29,15 @@ export const Details: React.FC = () => {
             </span>
           </div>
 
-          <div className="preview__asside">asside</div>
+          <div className="preview__asside">
+            <Asside />
+          </div>
         </div>
 
-        <div className="preview__options options">
-          <div className="container">footer</div>
+        <div className="preview__options">
+          <div className="container">
+            <Options />
+          </div>
         </div>
       </div>
     </main>
