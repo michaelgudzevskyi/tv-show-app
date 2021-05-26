@@ -1,24 +1,15 @@
 $layout-max-width: 720px;
-$font-bound-min: 320px; // will override defaults
-$font-bound-max: 720px; // will override defaults
+$font-bound-min: 320px;
+$font-bound-max: 720px;
 
-// ==============================
-// Font size mixin
-// ==============================
-
-//  default font scale bounding
 $font-lock-min: 320px !default;
-$font-lock-max: 1300px !default;
+$font-lock-max: 1400px !default;
 
-//  font-size
 @mixin font-size(
   $min,
-  // font-size
   $max: null,
-  // optional maximum font size
   $lock-min: $font-lock-min,
-  // optional minimum viewport width
-  $lock-max: $font-lock-max // optional maximum viewport width
+  $lock-max: $font-lock-max
 ) {
   & {
     font-size: $min;
@@ -39,9 +30,4 @@ $font-lock-max: 1300px !default;
       }
     }
   }
-}
-
-//  strip units helper function
-@function num($input) {
-  @return $input/($input * 0 + 1);
 }

@@ -7,7 +7,6 @@ import iconClose from 'assets/images/close-search-w.svg';
 
 export const Details: React.FC = () => {
   const { previewData } = useSelector((state: RootStateOrAny) => state.preview);
-  console.log('previewData: ', previewData);
   const dispatch = useDispatch();
   const { getMoviePreview } = PreviewCreators;
   const { getAllEpisodes } = EpisodesCreators;

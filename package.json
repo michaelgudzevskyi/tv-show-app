@@ -28,7 +28,9 @@
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "react-slick": "^0.28.1",
     "react-tabs": "^3.2.2",
+    "slick-carousel": "^1.8.1",
     "yup": "^0.32.9"
   },
   "devDependencies": {
@@ -43,6 +45,7 @@
     "@types/react-dom": "^17.0.3",
     "@types/react-lottie": "^1.2.5",
     "@types/react-router-dom": "^5.1.7",
+    "@types/react-slick": "^0.23.4",
     "@types/react-tabs": "^2.3.2",
     "@types/yup": "^0.29.11",
     "@typescript-eslint/eslint-plugin": "^4.22.0",

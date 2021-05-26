@@ -1,0 +1,34 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.actors {
+  margin: 20px 0 0 0;
+}
+
+.actor {
+  &__wrapper {
+    width: 90%;
+    background-color: #1e1e1e;
+    border-radius: 3px;
+    text-align: center;
+    height: 90px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px 0 14px;
+  }
+
+  &__name {
+    @include font-size(12px, 17px);
+  }
+
+  &__role {
+    @include font-size(10px, 13px);
+    color: darken($color-base, 30%);
+  }
+}
+
+.slick-prev {
+  display: none !important;
+}

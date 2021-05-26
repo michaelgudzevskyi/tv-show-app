@@ -1,0 +1,36 @@
+.custom-slick-next {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  right: -40px;
+
+  @media only screen and (max-width: 769px) {
+    display: none;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    width: 18px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+    top: 10px;
+    left: 3px;
+  }
+
+  &:after {
+    transform: rotate(315deg);
+    top: 23px;
+    right: 11px;
+  }
+}
